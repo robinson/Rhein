@@ -5,13 +5,17 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odenwald.Facade", "Odenwald.Facade\Odenwald.Facade.csproj", "{3C62CED9-6DCE-4F07-B655-2DEDE56839E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odenwald.WebApplication", "Odenwald.WebApplication\Odenwald.WebApplication.csproj", "{4682CC31-18EC-41BF-868C-2085CDE177AC}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7F2F1E33-D788-4362-9703-514DD1F671AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odenwald.Facade.Tests", "Tests'\Odenwald.Facade.Tests\Odenwald.Facade.Tests.csproj", "{6CD47D52-0C84-448D-A50D-571A0BDCEBD9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odenwald.Model", "Odenwald.Model\Odenwald.Model.csproj", "{7A5C2F8D-0587-4039-B7C4-9369DB715004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odenwald.WebApi", "Odenwald.WebApi\Odenwald.WebApi.csproj", "{9BF79CF6-26BE-4F88-836B-3AA73F6538FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odenwald.Web", "Odenwald.Web\Odenwald.Web.csproj", "{FA85309C-F89F-4EE4-9B70-88465BE7F060}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odenwald.WebApp", "Odenwald.WebApp\Odenwald.WebApp.csproj", "{25DDB1C4-4068-4135-AADA-723CD7ADAE15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +27,6 @@ Global
 		{3C62CED9-6DCE-4F07-B655-2DEDE56839E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C62CED9-6DCE-4F07-B655-2DEDE56839E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C62CED9-6DCE-4F07-B655-2DEDE56839E1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4682CC31-18EC-41BF-868C-2085CDE177AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4682CC31-18EC-41BF-868C-2085CDE177AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4682CC31-18EC-41BF-868C-2085CDE177AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4682CC31-18EC-41BF-868C-2085CDE177AC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6CD47D52-0C84-448D-A50D-571A0BDCEBD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6CD47D52-0C84-448D-A50D-571A0BDCEBD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CD47D52-0C84-448D-A50D-571A0BDCEBD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,6 +35,18 @@ Global
 		{7A5C2F8D-0587-4039-B7C4-9369DB715004}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A5C2F8D-0587-4039-B7C4-9369DB715004}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A5C2F8D-0587-4039-B7C4-9369DB715004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BF79CF6-26BE-4F88-836B-3AA73F6538FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BF79CF6-26BE-4F88-836B-3AA73F6538FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BF79CF6-26BE-4F88-836B-3AA73F6538FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BF79CF6-26BE-4F88-836B-3AA73F6538FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA85309C-F89F-4EE4-9B70-88465BE7F060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA85309C-F89F-4EE4-9B70-88465BE7F060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA85309C-F89F-4EE4-9B70-88465BE7F060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA85309C-F89F-4EE4-9B70-88465BE7F060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25DDB1C4-4068-4135-AADA-723CD7ADAE15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25DDB1C4-4068-4135-AADA-723CD7ADAE15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25DDB1C4-4068-4135-AADA-723CD7ADAE15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25DDB1C4-4068-4135-AADA-723CD7ADAE15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
