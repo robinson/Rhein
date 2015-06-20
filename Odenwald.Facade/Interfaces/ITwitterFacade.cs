@@ -13,6 +13,6 @@ namespace Odenwald.Facade.Interfaces
         //string ConsumerSecret{set;}
         //string AccessTokenKey{set;}
         //string AccessTokenSecret{set;}
-        IEnumerable<Odenwald.Model.Twitter.Tweet> Search(string inputText);
+        Task<IEnumerable<Odenwald.Model.Twitter.Tweet>> Search(string hashTag);
     }
 }

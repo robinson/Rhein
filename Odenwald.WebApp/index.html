@@ -5,7 +5,7 @@
         /* This helps the ng-show/ng-hide animations start at the right place. */
         /* Since Angular has this but needs to load, this gives us the class early. */
         .ng-hide {
-            display: none!important;
+            display: none !important;
         }
     </style>
     <title data-ng-bind="title">Hot Towel Angular</title>
@@ -29,6 +29,9 @@
     <link href="content/toastr.css" rel="stylesheet" />
     <link href="content/customtheme.css" rel="stylesheet">
     <link href="content/styles.css" rel="stylesheet" />
+    <!--<link href="content/demo.css" rel="stylesheet" />
+    <link href="content/component.css" rel="stylesheet" />-->
+    <!--<link href="content/ng-twitter.css" rel="stylesheet" />-->
 </head>
 <body>
     <div>
@@ -36,7 +39,7 @@
         <div id="splash-page" data-ng-show="false">
             <div class="page-splash">
                 <div class="page-splash-message">
-                    Hot Towel Angular
+                    Odenwald
                 </div>
                 <div class="progress progress-striped active page-progress-bar">
                     <div class="bar"></div>
@@ -87,6 +90,7 @@
     <script src="app/services/authService.js"></script>
     <script src="app/services/tokensManagerService.js"></script>
     <script src="app/services/authInterceptorService.js?v=2"></script>
+    <script src="app/services/searchService.js"></script>
 
     <!-- app Controllers -->
     <script src="app/controllers/indexController.js"></script>
@@ -96,6 +100,18 @@
     <script src="app/controllers/signupController.js"></script>
     <script src="app/controllers/tokensManagerController.js"></script>
     <script src="app/controllers/searchsController.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/masonry/2.1.08/jquery.masonry.min.js"></script>
+    <!--<script src="http://passy.github.io/angular-masonry/angular-masonry.js"></script>-->
 
+
+    <!--google grid gallery -->
+    <!--<script src="Scripts/grid/modernizr.custom.js"></script>
+    <script src="Scripts/grid/imagesloaded.pkgd.min.js"></script>
+    <script src="Scripts/grid/masonry.pkgd.min.js"></script>
+    <script src="Scripts/grid/classie.js"></script>
+    <script src="Scripts/grid/cbpGridGallery.js"></script>-->
+    <!--<script>
+        new CBPGridGallery(document.getElementById('grid-gallery'));
+    </script>-->
 </body>
 </html>

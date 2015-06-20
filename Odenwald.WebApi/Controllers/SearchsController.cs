@@ -2,6 +2,7 @@
 using Odenwald.Facade.Interfaces;
 using Odenwald.Model.Twitter;
 using System;
+using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -20,19 +21,32 @@ namespace Odenwald.WebApi.Controllers
 
         [ActionName("searchhashtag")]
         [System.Web.Http.HttpGet]
-        public IEnumerable<Tweet> SearchHashtag(string q)
+        //public IEnumerable<Tweet> SearchHashtag(string q)
+        //{
+        //    ITwitterFacade facade = new TwitterFacade(_consumerKey, _consumerSecret, _accessKey, _accessToken);
+        //    try
+        //    {
+        //        var result = facade.Search(q);
+        //        return result;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+
+        //}
+        public async Task<IEnumerable<Odenwald.Model.Twitter.Tweet>> SearchHashtag(string q)
         {
             ITwitterFacade facade = new TwitterFacade(_consumerKey, _consumerSecret, _accessKey, _accessToken);
             try
             {
-                var result = facade.Search("#" + q);
+                var result = await facade.Search(q);
                 return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-
         }
     }
 }

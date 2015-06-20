@@ -549,3 +549,72 @@ a {
 }
 
 /*#endregion */
+
+.twitter .origin-flag {
+    background-image: url('https://static.tagboard.com/public/img/logo-twitter-white.svg?ae4cdaae');
+    background-color: #40cdfd;
+}
+
+.origin-flag {
+    position: absolute;
+    top: 7px;
+    right: -8px;
+    width: 30px;
+    height: 28px;
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 67% 67%;
+}
+/*.ul {
+     list-style-type: none;
+}*/
+
+.grid {
+    border: solid 1px #ccc padding: 10px 10px 0 0;
+}
+.grid li {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: solid 1px #ccc;
+    margin: 0 0 10px 10px;
+    background: #eee;
+}
+
+/**** Transitions ****/
+
+.masonry,
+.masonry ul {
+    list-style-type: none;
+}
+.masonry li { /* apply before masonry add class */
+    position: absolute; /* important to add it before enter animation start */
+    
+    -webkit-transition-duration: .7s;
+    transition-duration: .7s;
+    
+    -webkit-transition-property: all;
+    transition-property: all;
+}
+
+.masonry .masonry-enter { /* limit animated properties for entering elements */
+    -webkit-transition-property: -webkit-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+.masonry-enter,
+.masonry-leave.masonry-leave-active {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+}
+
+.masonry-leave,
+.masonry-enter.masonry-enter-active {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+

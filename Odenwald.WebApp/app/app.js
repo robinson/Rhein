@@ -13,7 +13,8 @@
         'LocalStorageModule',//local storage module
 
         // 3rd Party Modules
-        'ui.bootstrap'      // ui-bootstrap (ex: carousel, pagination, dialog)
+        'ui.bootstrap'// ui-bootstrap (ex: carousel, pagination, dialog)
+        //, 'wu.masonry'
     ]);
     
     // Handle routing errors and success events

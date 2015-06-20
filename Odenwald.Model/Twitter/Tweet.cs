@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 namespace Odenwald.Model.Twitter
 {
     public class Tweet
@@ -20,5 +21,6 @@ namespace Odenwald.Model.Twitter
                     TweetText;
             }
         }
+        public IEnumerable<TweetMedia> Medias { get; set;}
     }
 }

@@ -57,6 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\common\ng-twitter.js" />
+    <Content Include="app\views\tweet-item.html" />
+    <Content Include="Content\component.css" />
+    <Content Include="Content\demo.css" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
@@ -155,6 +159,11 @@
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\grid\cbpGridGallery.js" />
+    <Content Include="Scripts\grid\classie.js" />
+    <Content Include="Scripts\grid\imagesloaded.pkgd.min.js" />
+    <Content Include="Scripts\grid\masonry.pkgd.min.js" />
+    <Content Include="Scripts\grid\modernizr.custom.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Scripts\moment-with-langs.js" />
@@ -174,6 +183,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
