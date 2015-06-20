@@ -61,6 +61,7 @@
     <Content Include="app\views\tweet-item.html" />
     <Content Include="Content\component.css" />
     <Content Include="Content\demo.css" />
+    <Content Include="Content\images\Twitter_logo_white.png" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
