@@ -29,9 +29,6 @@
     <link href="content/toastr.css" rel="stylesheet" />
     <link href="content/customtheme.css" rel="stylesheet">
     <link href="content/styles.css" rel="stylesheet" />
-    <!--<link href="content/demo.css" rel="stylesheet" />
-    <link href="content/component.css" rel="stylesheet" />-->
-    <!--<link href="content/ng-twitter.css" rel="stylesheet" />-->
 </head>
 <body>
     <div>
@@ -102,16 +99,21 @@
     <script src="app/controllers/searchsController.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/masonry/2.1.08/jquery.masonry.min.js"></script>
     <!--<script src="http://passy.github.io/angular-masonry/angular-masonry.js"></script>-->
-
-
+    <!--google chart -->
+    <script type="text/javascript" src="http://www.google.com/jsapi?ext.js"></script>
     <!--google grid gallery -->
     <!--<script src="Scripts/grid/modernizr.custom.js"></script>
     <script src="Scripts/grid/imagesloaded.pkgd.min.js"></script>
     <script src="Scripts/grid/masonry.pkgd.min.js"></script>
     <script src="Scripts/grid/classie.js"></script>
     <script src="Scripts/grid/cbpGridGallery.js"></script>-->
-    <!--<script>
-        new CBPGridGallery(document.getElementById('grid-gallery'));
-    </script>-->
+    <script>
+        //google.setOnLoadCallback(function () {
+        //    angular.bootstrap(document.body, ['app']);
+        //});
+        google.load('visualization', '1', {
+            packages: ['corechart']
+        });
+    </script>
 </body>
 </html>

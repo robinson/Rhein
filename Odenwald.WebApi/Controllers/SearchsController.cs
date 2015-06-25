@@ -41,12 +41,27 @@ namespace Odenwald.WebApi.Controllers
             try
             {
                 var result = await facade.Search(q);
-                return result;
+                var tweets = Odenwald.WebApi.Helpers.SentimentHelper.CalculateSentiment(result);
+                return tweets;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
         }
+        //[ActionName("calculatestat")]
+        //[System.Web.Http.HttpGet]
+        //public Statistic CalculateStat(IEnumerable<Model.Twitter.Tweet> tweets,string keyword)
+        //{
+        //    ITwitterFacade facade = new TwitterFacade();
+        //    try
+        //    {
+        //        return null;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
     }
 }

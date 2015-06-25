@@ -22,5 +22,7 @@ namespace Odenwald.Model.Twitter
             }
         }
         public IEnumerable<TweetMedia> Medias { get; set;}
+
+        public Score Score { get; set; }
     }
 }

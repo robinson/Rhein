@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Odenwald.Facade.Interfaces;
+using Odenwald.Model.Twitter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,10 @@ namespace Odenwald.Facade
             TwitterCredentials.SetCredentials(accessTokenKey, accessTokenSecret, consumerKey, consumerSecret);
             Mapping.TweetMapping.CreateMap();
         }
+        /// <summary>
+        /// default constructor
+        /// </summary>
+        public TwitterFacade() { }
 
         //public IEnumerable<Odenwald.Model.Twitter.Tweet> Search(string hashTag)
         //{
@@ -40,7 +45,7 @@ namespace Odenwald.Facade
         //        throw ex;
         //    }
         //}
-        public async Task<IEnumerable<Odenwald.Model.Twitter.Tweet>> Search(string hashTag) 
+        public async Task<IEnumerable<Odenwald.Model.Twitter.Tweet>> Search(string hashTag)
         {
             var searchParameter = Tweetinvi.Search.CreateTweetSearchParameter(hashTag);
             searchParameter.TweetSearchType = TweetSearchType.All;//TODO: consider to search retweet
@@ -56,5 +61,11 @@ namespace Odenwald.Facade
                 throw ex;
             }
         }
+
+        //public Statistic CalculateStat(IEnumerable<Model.Twitter.Tweet> tweets, string keyword)
+        //{
+        //   return Helpers.SentimentHelper.CalculateSentiment(tweets, keyword);
+        //}
+       
     }
 }

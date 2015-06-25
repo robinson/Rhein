@@ -3,6 +3,9 @@
 using Xunit;
 using Odenwald.Facade.Interfaces;
 using Odenwald.Facade;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using Odenwald.Model.Twitter;
 
 namespace Odenwald.Facade.Tests
 {
@@ -21,5 +24,18 @@ namespace Odenwald.Facade.Tests
             var result = facade.Search(inputHashTag);
             Assert.NotNull(result);
         }
+        //[Fact]
+        //public async Task TestCalculateSentiment()
+        //{
+
+        //    string keyword = "bphone";
+        //    ITwitterFacade facade = new TwitterFacade(consumerKey, consumerSecret, accessTokenKey, accessTokenSecret);
+
+        //    var tweets = await facade.Search(keyword);
+        //    Assert.NotNull(tweets);
+        //    IEnumerable<Model.Twitter.Tweet> results = (IEnumerable<Model.Twitter.Tweet>)tweets;
+        //    var stat = facade.CalculateSentiment(results, keyword);
+        //    Assert.NotNull(stat);
+        //}
     }
 }

@@ -38,6 +38,7 @@
                                 <span>Created: {{tweet.createdAt}}</span>
                             </li>
                         </ul>
+                      
                         <!--<ul class="ul">
                             <li ng-repeat="tweet in vm.tweets">
                                 <div>
@@ -63,11 +64,13 @@
                 </div>
             </div>
 
+            <div data-ng-show="vm.tweets.length">
+                <pie-chart data="chartData" title="{{chartTitle}}" width="{{chartWidth}}" height="{{chartHeight}}" select="selectRow(selectedRowIndex)"></pie-chart>
+            </div>
+
 
         </div>
-
+      
     </section>
 </section>
-<!--<script>
-    new CBPGridGallery(document.getElementById('grid-gallery'));
-</script>-->
+
